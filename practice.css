@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+table td {
+  border: 10px solid white;
+}
+
+th, td {
+  padding: 30px;
+  text-align: left;
+  border: 1px solid white;
+  color: white;
+}
+
+div.fixed {
+  position: fixed;
+  top: 28%;
+  right: 49.5%;
+  width: 100px;
+}
+
+div.circle {
+  margin: 1em auto;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border-width: 200px;
+  border-style: solid;
+  border-color: yellow green blue red;
+  transform: rotate(45deg);
+}
+
+
+
