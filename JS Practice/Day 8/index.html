@@ -1,0 +1,97 @@
+<!-- <html>
+	<body>
+		<header>
+
+			<ul>
+				<li class="first">Item 1</li>
+				<li class="selected">Item 2</li>
+				<li class="last">Item 3</li>
+			</ul>
+
+			<header id='title'> Title</header>
+
+		</header>
+
+		<div class="col">
+			<section>
+				<h2>Section 1</h2>
+			</section>
+			<section class="current">
+				<h2 class="highlight">Section 2</h2>
+			</section>
+			<section>
+				<h1>Section 2</h1>
+			</section>
+		</div>
+	<script type="text/javascript" src='dompractice.js'></script>
+	<script type="text/javascript">
+		// write your JS here for exercise one
+		document.querySelector('header');
+		document.querySelector('section');
+		document.querySelector('section.current');
+		document.querySelector('section.current').nextElementSibling;
+		document.querySelector('section.current').previousElementSibling.children[0];
+		document.querySelector('h2.highlight').parentElement.parentElement;
+			//map creates an array with the results of a function that returns multiple arrays
+			//querySelectorAll returns a Node list, which we can't run .map on; thats why we have to wrap it inside of an Array.from() so that we can then run a .map on it
+		let sections = Array.from(document.querySelectorAll('section h2')).map(function(a){
+			return a.parentElement;
+		});
+
+		console.log(sections)
+
+
+	</script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+​
+	<h2>Shopping List</h2>
+	<ul id="list">
+		<li>Ramen</li>
+		<li>Coffee</li>
+		<li>Pop Tarts</li>
+		<li>Twinkies</li>
+	</ul>
+​
+	<script type="text/javascript">
+		// Write your JS here
+		var list = document.querySelector('#list');
+		//1
+		list.children[1].innerHTML = "Fair Trade Coffee";
+		//2
+		list.children[3].remove();
+		//3
+		var soda = document.createElement('li');
+		soda.innerHTML = 'Mountain Dew';
+		list.appendChild(soda);
+		//4
+		list.innerHTML = '';
+		var newItems = ['Protein Powder', 'Muscle Milk', 'Power Bars'];
+		newItems.forEach(function(itemText){
+			var li = document.createElement('li');
+			li.innerHTML = itemText;
+			list.appendChild(li);
+		});
+		//5
+		list.children[1].classList.add('important');
+
+
+
+
+	</script>
+</body>
+
+<!-- Update the 'coffee' item to say 'Fair Trade Coffee'
+Remove 'Twinkies' from the list
+Add an item called 'Mountain Dew'
+Clear the list and programmatically add items from this array: ["protein powder", "muscle milk", "power bars"]
+Add the class "important" to the muscle milk item -->

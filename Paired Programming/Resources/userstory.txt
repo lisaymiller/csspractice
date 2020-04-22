@@ -1,0 +1,23 @@
+User story: As a customer who wants to connect with Maher and Hall’s Famous Jams and Jellies, I want to be able to navigate to a page where I can find out more about the company and contact them so I can have my questions answered.
+
+Kaley Fry
+22 hours ago
+Test description: 
+
+The home page will link to a aboutus/contact us page
+
+The about us/contact us page will display
+
+the same nav bar and stylings as the home page
+
+A contact form 
+
+Address, phone number, and email of the company
+
+Requirements for input fields
+
+The user will not be able to submit a blank form
+
+
+
+firstname, last name, email, phone number, comment sections??

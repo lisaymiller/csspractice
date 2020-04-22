@@ -1,0 +1,14 @@
+{
+  "name": "lisatestapp",
+  "version": "1.0.0",
+  "description": "Test application learning node and npm",
+  "main": "basic.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Lisa Miller",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
