@@ -1,0 +1,30 @@
+What to design first? public interface or inner details?
+- "top down" or "bottom up" design concept 
+- depends on a lot of factors, most teams use both
+
+Top down: identify "top level" objects first and then find objects that represent smaller portions of the system
+-would continually refine those definitions until the system is complete
+-in our car dealeaership application this may look like dealership, departments, staff, vehicles
+
+Bottom up: start at the lowest level of objects, those that are the most specific are designed first and then those objects would be combined into bigger modules until the overall system is complete
+-in the dealshiper it would be: vehicles, departments, dealership, staff
+
+**we are going to start bottom up for dealeaership**
+
+Starting with Vehicles:
+-object hierarchy: "Gen-Spec" (Generialized-Specialized) / "is-a" relationship; find common abstractions (guts of classes we are hiding) and model those in our base class then having specialized classes derive those from the base class
+
+From Erica Lewis to Everyone:  10:09 AM
+load = load extra parameters
+From George Gardner to Everyone:  10:09 AM
+Override takes a ride in from a different class, overloading is loading up a method with more arguments
+
+new info: instanceof, enumerations, how to work with a multifile program
+
+Object relationships:
+
+-association: loose relationship, lifetime of objects are independent of one another, "is-a" relationship (not always)
+
+-composition: "has-a" relationship or a "part-of", a dealership "has-a" department, the departments dont exist outside of a dealership therefore its a composition relationship
+
+-aggregation: a dealership also "has" vehicles, but its a less tightly coupled relationships, vehicles come and go through the dealership and the dealership can manipulate them while it "owns" them, but ultimately a vehicle _can_ exist outside of a dealership - this is called *aggregation*
